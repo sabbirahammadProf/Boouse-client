@@ -31,6 +31,12 @@ async function run() {
             res.send(result);
         });
 
+        app.get('/room/:id', async (req, res) => {
+            const id = req.params.id;
+            const query = await roomsCollection.find({"_id": ObjectID(id)}).toArray();
+            res.send(query);
+        });
+        
         app.get('/books', async (req, res) => {
             const cursor = bookedCollection.find({});
             const allBooking = await cursor.toArray();
@@ -60,11 +66,6 @@ async function run() {
             res.json(result);
         });
 
-        app.get('/room/:id', async (req, res) => {
-            const id = req.params.id;
-            const query = await roomsCollection.find({"_id": ObjectID(id)}).toArray();
-            res.send(query);
-        });
 
     } finally {
 
