@@ -1,7 +1,6 @@
 {
   "name": "boouse",
   "version": "1.0.0",
-  "description": "",
   "main": "index.js",
   "scripts": {
     "start": "node index.js",
@@ -24,5 +23,6 @@
   "bugs": {
     "url": "https://github.com/programming-hero-web-course1/tourism-or-delivery-website-server-side-sabbirahammadProf/issues"
   },
-  "homepage": "https://github.com/programming-hero-web-course1/tourism-or-delivery-website-server-side-sabbirahammadProf#readme"
+  "homepage": "https://github.com/programming-hero-web-course1/tourism-or-delivery-website-server-side-sabbirahammadProf#readme",
+  "description": ""
 }
